@@ -1,0 +1,627 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: 0px;
+    padding:0;
+    background-image:url(tl2.jpg);
+    background-size: contain;
+    background-repeat:initial;
+    background-color: lightslategrey;
+    transition: background-image 0.5s ease; 
+}
+header{
+    height: 160px;
+    position:sticky;
+    background-color:lightgray;
+    z-index:1000;
+}
+header img{
+    height:100px;
+    position:relative;
+    left:75%;
+    top:-130px;
+    margin-left:15px;
+}
+.naglowek{
+    position:relative;
+    top:-113px;
+    height:2px;
+    width:100%;
+    border:none;
+    background-color:black;
+}
+
+#o-Mnie{
+    color:white;
+    font-family: 'Caprasimo', serif;
+}
+footer{
+    width:100%;
+    height:20%;
+    position: absolute;
+    top:230%;
+    clear:both;
+    
+    
+}
+footer input,textarea{
+    width:700px;
+}
+
+.stopka{
+    position:relative;
+    left:34%;
+    width:23.2%;
+    margin-bottom:200px;
+}
+.przycisk{
+    width:300px;
+    height:50px;
+    background-color:rgba(0, 0, 0, 0.24)
+}
+#kontakt{
+    font-family: 'Caprasimo', serif;
+    display:flex;
+    justify-content: flex-end;
+    font-size:48px;
+}
+.tlo{
+    position:absolute;
+    top:950px;
+    width:1920px;
+    z-index: -1000;
+}
+#projekty{
+ 
+    height:800px;
+    top:200px;
+    position:relative;
+}
+
+#opis{
+    font-family:cursive;
+    font-style:bold;
+    font-size:24px;
+}
+
+
+.jeden{
+    display:flex;
+    justify-content: start;
+    margin-left:200px;
+    margin-top: 400px;
+    border:2px solid black;
+    width:35%;
+    transition: transform 0.3s ease;
+}
+.dwa{
+    display:flex;
+    justify-content: flex-start;
+    margin-left:1000px;
+    margin-top: -324px;
+    border:2px solid black;
+    width:35%;
+    transition: transform 0.3s ease;
+    
+}
+.jeden:hover,.dwa:hover{
+    transform:scale(1.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+#projekty a{
+    text-decoration: none;
+    color:white;
+    height:300px;
+    
+    
+}
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    display:flex;
+    font-size:45px;
+    justify-content: center;
+    color:white;
+}
+.tekstproj{
+    font-family: 'Caprasimo', serif;
+    position:relative;
+    top:330px;
+    
+    
+}
+.imie,.email{
+    height:50px;
+}
+#projekty h2{
+    position:relative;
+    left:350px;
+    bottom:190px;
+}
+.projekt{
+    width:300px;
+    height:300px;
+    filter:saturate(1%);
+    
+
+
+
+    
+}
+.projekt:hover{
+    filter:saturate(100%)
+}
+form{
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  left:-10%;
+  bottom:20px;
+  text-align: center;
+  width:700px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+div.container
+{
+  font-family: Raleway;
+  margin: 0 auto;
+  padding: 5em 2em;
+  text-align: center;
+}
+
+div.container a
+{
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    text-decoration: none;
+    font: 40px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    top:-20px;
+    display:flex;
+    justify-content: space-around;
+    z-index: 0;
+    cursor: pointer;
+    float:left;
+}
+
+
+div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #4a4a4a;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Top and Bottom borders come in */
+div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersIn a:before
+{
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersIn a:after
+{
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Top border go down and Left border appears */
+div.topLeftBorders a:before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:after
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:hover:before
+{
+    height: 100%;
+}
+
+div.topLeftBorders a:hover:after
+{
+    opacity: 0;
+    top: 100%;
+}
+
+/* Circle behind */
+div.circleBehind a:before, div.circleBehind a:after
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #0277bd;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div.circleBehind a:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+div.circleBehind a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.circleBehind a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+
+
+
+
+
+
+/* Pull down  */
+div.pullDown a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+
+
+/* Pull up  */
+div.pullUp a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+
+
+/* Pull right  */
+div.pullRight a:before
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+
+
+/* Pull left  */
+div.pullLeft a:before
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+
+
+/* Pull up and down  */
+div.pullUpDown a:before, div.pullUpDown a:after
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+
+
+/* Pull right and left  */
+div.pullRightLeft a:before, div.pullRightLeft a:after
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+
+
+
+
+/* Highlight text out  */
+div.highlightTextOut a
+{
+    color: rgba(255, 255, 255, 0.3); 
+}
+
+
+
+
+
+/* Highlight text in  */
+div.highlightTextIn a
+{
+    color: rgba(0, 0, 0, 0.4); 
+}
+
+div.highlightTextIn a:before
+{
+    transform: scale(1.2);
+} 
+
+
+.main {
+  max-width: 75rem;
+  padding: 3em 1.5em;
+}
+
+.main__heading {
+  font-weight: 600;
+  font-size: 2.25em;
+  margin-bottom: 0.75em;
+  text-align: center;
+  color: #eceff1;
+}
+
+.cards {
+  position: relative;
+}
+
+.cards__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+}
+
+.card {
+  flex: 1 1 14rem;
+  padding: 1.5em 2em;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  align-items: start;
+  gap: 1.25em;
+  color: #eceff1;
+  background-color: #2b2b2b;
+  border: 1px solid #eceff133;
+  border-radius: 15px;
+  --lightness: 95%;
+    background: hsla(var(--hsl), 0.1);
+  
+}
+.card input,textarea{
+    border-radius: 10px;
+}
+
+.card:nth-child(1) {
+  --hue: 165;
+  --saturation: 82.26%;
+  --lightness: 51.37%;
+}
+
+.card:nth-child(2) {
+  --hue: 291.34;
+  --saturation: 95.9%;
+  --lightness: 61.76%;
+}
+
+.card:nth-child(3) {
+  --hue: 338.69;
+  --saturation: 100%;
+  --lightness: 48.04%;
+}
+
+.card__bullets {
+  line-height: 1.4;
+}
+
+.card__bullets li::before {
+    display: inline-block;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='16' title='check' fill='%23dddddd'%3E%3Cpath d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z' /%3E%3C/svg%3E");
+    transform: translatey(0.25ch);
+    margin-right: 1ch;
+  }
+  
+  .card__heading {
+    font-size: 1.05em;
+    font-weight: 600;
+  }
+  
+  .card__price {
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+  
+  .flow > * + * {
+    margin-top: var(--flow-space, 1.25em);
+  }
+  
+  .cta {
+    display: block;
+    align-self: end;
+    margin: 1em 0 0.5em 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0d0d0d;
+    padding: 0.7em;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    user-select: none;
+    opacity: var(--opacity, 0);
+    -webkit-mask: radial-gradient(
+      25rem 25rem at var(--x) var(--y),
+      #000 1%,
+      transparent 50%
+    );
+    mask: radial-gradient(
+      25rem 25rem at var(--x) var(--y),
+      #000 1%,
+      transparent 50%
+    );
+    transition: 400ms mask ease;
+    will-change: mask;
+  }
+  
+
+  
+  :not(.overlay) > .card {
+    transition: 400ms background ease;
+    will-change: background;
+  }
+  
+  :not(.overlay) > .card:hover {
+    --flow-space: 0.5em;
+    --hsl: var(--hue), var(--saturation), var(--lightness);
+    flex: 1 1 14rem;
+    padding: 1.5em 2em;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    align-items: start;
+    gap: 1.25em;
+    color: #eceff1;
+    background-color: #2b2b2b;
+    border: 1px solid #eceff133;
+    border-radius: 15px;
+  }
+
+
+.opis img{
+    width:auto;
+    border-radius: 10px 0 0 10px ;
+    float:left;
+    margin-right:20px;
+}
+
+.opis {
+    background-color: gray;
+    color:white;
+    position: relative;
+    top: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding:20px;
+    width: 80%;
+    border: 10px solid;
+    border-radius: 30px;
+    animation: zmianaKoloru 7s infinite;
+}
+
+@keyframes zmianaKoloru {
+    0% { border-color: rgb(0, 0, 255); } /* Czerwony */
+    20% { border-color: rgb(62, 28, 212); } /* Żółty */
+    40% { border-color: rgb(63, 19, 133); } /* Zielony */
+    60% { border-color: rgb(38, 10, 83); } /* Cyjan */
+    80% { border-color: rgb(84, 66, 97); } /* Niebieski */
+    100% { border-color: rgb(0, 132, 255); } /* Fioletowy */
+}
+
+
+
+

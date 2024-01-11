@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Rubik+Scribble&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+  
+</head>
+<body>
+  <header>
+    <div class="container red topBotomBordersOut">
+      <a href="#o-Mnie">O mnie</a>
+      <a href="#tekstproj">Projekty</a>
+      <a href="#kontakt">Kontakt</a>
+      
+      
+      
+    </div>
+    <div class="obrazki">
+    <img src="html.png" alt="html">
+    <img src="css.png" alt="css">
+    <img src="js.png" alt="js">
+    <img src="python.png" alt="python">
+  </div>
+    <hr class="naglowek">
+  </header>
+<main id="o-mnie">
+  <section class="opis">
+    
+  <h1 id="o-Mnie">
+    Witaj!
+  </h1>
+  <p id="opis"></p>
+ 
+</section>
+</main>
+
+<div>
+  <img class="tlo" src="tlo.png" alt="">
+<section id="projekty">
+  <h1 id="tekstproj" class="tekstproj">Projekty</h1>
+  <div class="jeden show-on-scroll">
+  <a href="https://github.com/Adamos707/Projekt-Slider">
+    <img class="projekt inline-photo show-on-scroll" src="projekt1.png" alt="pierwszy projekt"><h2>Projekt Slider</h2>
+  </a>
+</div>
+  <br>
+  <div class="dwa show-on-scroll">
+  <a href="https://github.com/Adamos707/Projekt-Portfolio">
+    <img class="projekt inline-photo show-on-scroll" src="Portfolio.png" alt="drugi projekt"><h2>Portfolio z grą</h2>
+  </a>
+</div>
+
+
+</section>
+</div>
+<footer>
+  <section class="stopka">
+<h1 id="kontakt">Kontakt</h1>
+<form class="cards__card card" action="https://formsubmit.io/send/adamos707@gmail.com" method="post">
+  <input name="_redirect" type="hidden" id="name" value="https://">
+  <input class="imie" type="text" placeholder="Podaj Swoje Imię">
+  <br>
+  <br>
+  <input class="email" type="text" placeholder="Podaj swój e-mail">
+  <br>
+  <br>
+  <textarea placeholder="Wpisz swoją wiadomość" cols="30" rows="10"></textarea>
+  <br>
+  <br>
+  <input class="card__cta cta" type="submit" value="Wyślij">
+  
+</form>
+</section>
+</footer>
+</body>
+</html>
