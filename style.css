@@ -11,7 +11,8 @@ body
     background-size: contain;
     background-repeat:initial;
     background-color: lightslategrey;
-    transition: background-image 0.5s ease; 
+    transition: background-image 0.5s ease;
+    resize:none;
 }
 header{
     height: 160px;
